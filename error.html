@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <h1 id="title" class="navbar-text navbar-left"><a href = "index.html">TINY URL</a></h1>
+            <h1 id="title" class="navbar-text navbar-left"><a href = index.html>TINY URL</a></h1>
             <p class="navbar-text navbar-right navbar-leftblock" id = "logintab" data-toggle="modal" data-target="#login-modal"><a href=#>LOG IN</a>
             </p>
             <p class="navbar-text navbar-right navbar-leftblock" id = "signuptab" data-toggle="modal" data-target="#login-modal"><a href=#>SIGN UP</a>
@@ -34,7 +34,7 @@
                     <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                 </form>
                 <div class="login-help" id = "register_tab">
-                    <a href="#">Register</a>
+                    <a href="#"s>Register</a>
                 </div>
             </div>
                     <div class= "modal-container signupmodal-container" style = "display:none">
@@ -46,40 +46,16 @@
                     <input type="submit" name="login" class="login loginmodal-submit" value="Register">
                 </form>
                 <div class="login-help" id = "login_subtab">
-                    <a href="#">Log in</a>
+                    <a href="#"s>Log in</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="inputbox">
-        <form class="form-wrapper">
-            <input type="text" id="search" placeholder="Type your url here..." required>
-            <input type="submit" value="GENERATE" id="submit">
-        </form>
-    </div>
+<div id = "errorpage">
+    <img src = "img/error.png">
     
-       <div id="customized_inputbox" style = "display:none">
-        <form class="form-wrapper">
-             <input type="text" id="customize" placeholder="Type your url here..." required>
-            <input type="text" id="search" placeholder="Get customized" required>
-            <input type="submit" value="CUSTOMIZE" id="submit">
-        </form>
-    </div>
-    
-    
-    <div id = "customize_div">
-    <a href = "#" id = "customize_button">customize</a>
-    <a href = "#" id = "back_button" style = "display:none">back</a>    
-    </div>
-    
-    
-<!--
-    <div id="description">
-        <p>URL shortener created by unc students.
-            <br> Track your links by logging in.</p>
-    </div>
--->
+</div>
     <div class="background-img">
         <img src="img/background.png">
     </div>
@@ -87,6 +63,14 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+     $(document).ready(function () {
+     alert("fire");
+     var delay = 2000;
+     setTimeout(function(){ 
+         window.location = "index.html";}, delay);
+     });
+    </script>
 </body>
 
 </html>

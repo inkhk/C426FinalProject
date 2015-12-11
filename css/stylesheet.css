@@ -50,6 +50,20 @@ margin-top:270px;
     outline: 0 none;
 }
 
+.form-wrapper #customize {
+    width: 500px;
+    height: 50px;
+    padding: 10px 5px;
+    margin-bottom: 30px;
+    float: left;
+    font-size:16px;
+    color:#797979;
+    border-style: solid;
+    border-color:#cecece #cecece #cecece #cecece;
+    outline: 0 none;
+}
+
+
 .form-wrapper #submit {
     float: right;
     border: none;
@@ -84,6 +98,8 @@ font-weight: 200;
 .background-img{
 margin-top: -70px;
 overflow-x: hidden;
+position: relative;
+z-index: 0;
 }
 
 
@@ -192,5 +208,33 @@ text-transform: uppercase;
 .login-help{
   font-size: 12px;
 }
+#customized_inputbox{
+margin-top:270px;
+}
+#customize_div{
+display: block;
+margin: 0 auto;
+font-size: 18px;
+color:#797979;
+text-align: center;
+font-weight: 200;
+}
 
+#customize_div a{
+text-decoration: underline;
+width: 100px;
+height: 50px;
+cursor: pointer;
+position: relative;
+z-index: 1;
+}
+#errorpage{
+margin-top:230px;
+}
 
+#errorpage img{
+display: block;
+margin: 0 auto;
+width: 40%;
+height: auto;
+}
